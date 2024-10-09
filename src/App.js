@@ -2,6 +2,7 @@ import Handlebars from 'handlebars';
 import loginTemplate from './pages/login.hbs?raw';
 import registerTemplate from './pages/register.hbs?raw';
 import chatsTemplate from './pages/chats.hbs?raw';
+import settingsTemplate from './pages/settings.hbs?raw';
 
 class App {
     constructor() {
@@ -9,6 +10,7 @@ class App {
             '/login': Handlebars.compile(loginTemplate),
             '/register': Handlebars.compile(registerTemplate),
             '/chats': Handlebars.compile(chatsTemplate),
+            '/settings': Handlebars.compile(settingsTemplate),
         };
         this.chats = [
             { id: 1, name: 'Чат 1' },
@@ -36,8 +38,28 @@ class App {
         const appContainer = document.getElementById('app');
         appContainer.innerHTML = templateFunc();
 
-        if (path === '/chats') {
+        if (path === '/settings') {
+            this.setupSettingsForm();
+        } else if (path === '/chats') {
             this.renderChatList();
+        }
+    }
+
+    setupSettingsForm() {
+        const form = document.getElementById('settingsForm');
+        if (form) {
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const formData = new FormData(form);
+
+                const settings = {};
+                formData.forEach((value, key) => {
+                    settings[key] = value;
+                });
+
+                console.log('Обновленные настройки:', settings);
+                // Здесь можно добавить логику для отправки данных на сервер или их обработки
+            });
         }
     }
 

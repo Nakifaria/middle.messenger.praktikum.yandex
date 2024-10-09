@@ -71,7 +71,6 @@ a:hover {
     border-right: 1px solid #ccc; /* Разделитель между чатами и перепиской */
     padding: 10px; /* Отступы */
     overflow-y: auto; /* Прокрутка, если чатов много */
-    background-color: yellow; 
 }
 
 .chat-item {
@@ -123,4 +122,17 @@ a:hover {
     border: none; /* Без границы */
     border-radius: 5px; /* Закругленные углы кнопки */
     cursor: pointer; /* Указатель курсора */
+}
+
+.settings-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
 }
