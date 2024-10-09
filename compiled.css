@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-align: center;
+    color: #007bff;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+a:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+}
+
+.chat-container {
+    display: flex; /* Используем Flexbox для расположения */
+    height: 100vh; /* Задаем высоту на весь экран */
+}
+
+.chat-list {
+    width: 250px; /* Ширина для списка чатов */
+    background-color: #f0f0f0; /* Фоновый цвет списка */
+    border-right: 1px solid #ccc; /* Разделитель между чатами и перепиской */
+    padding: 10px; /* Отступы */
+    overflow-y: auto; /* Прокрутка, если чатов много */
+}
+
+.chat-item {
+    padding: 10px; /* Отступы ячейки */
+    margin: 5px 0; /* Отступы между ячейками */
+    background-color: #fff; /* Фон ячейки */
+    border: 1px solid #ccc; /* Граница ячейки */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель курсора при наведении */
+    transition: background-color 0.2s; /* Плавный переход фона */
+}
+
+.chat-item:hover {
+    background-color: #e6f7ff; /* Цвет при наведении */
+}
+
+.chat-window {
+    flex-grow: 1; /* Занимает оставшееся пространство */
+    padding: 20px; /* Отступы */
+    display: flex;
+    flex-direction: column; /* Для вертикального расположения сообщений */
+    background-color: #fff; /* Фоновый цвет переписки */
+}
+
+#messages {
+    flex-grow: 1; /* Занимает оставшееся пространство для сообщений */
+    overflow-y: auto; /* Прокрутка, если сообщений много */
+    border: 1px solid #ccc; /* Граница для области сообщений */
+    padding: 10px; /* Отступы */
+    margin-bottom: 10px; /* Отступ снизу перед полем ввода */
+}
+
+.message-input {
+    display: flex; /* Для расположения поля ввода и кнопки */
+}
+
+.message-input input {
+    flex-grow: 1; /* Занимает оставшееся пространство */
+    padding: 10px; /* Отступы поля ввода */
+    border: 1px solid #ccc; /* Граница поля ввода */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+.message-input button {
+    padding: 10px; /* Отступы кнопки */
+    margin-left: 10px; /* Отступ между полем ввода и кнопкой */
+    background-color: #007bff; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Без границы */
+    border-radius: 5px; /* Закругленные углы кнопки */
+    cursor: pointer; /* Указатель курсора */
+}
+
+.settings-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
