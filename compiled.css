@@ -51,10 +51,12 @@ button:hover {
 a {
     text-align: center;
     color: #007bff;
+    -webkit-text-decoration: none;
     text-decoration: none;
 }
 
 a:hover {
+    -webkit-text-decoration: underline;
     text-decoration: underline;
 }
 
@@ -69,6 +71,7 @@ a:hover {
     border-right: 1px solid #ccc; /* Разделитель между чатами и перепиской */
     padding: 10px; /* Отступы */
     overflow-y: auto; /* Прокрутка, если чатов много */
+    background-color: yellow; 
 }
 
 .chat-item {
