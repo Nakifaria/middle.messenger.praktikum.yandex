@@ -12,11 +12,13 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
     "postcss-preset-env": "^10.0.6",
     "vite": "^5.4.8"
   },
   "dependencies": {
     "express": "^4.21.0",
+    "handlebars": "^4.7.8",
     "vite-plugin-handlebars": "^2.0.0"
   }
 }

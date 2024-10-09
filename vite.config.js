@@ -14,4 +14,5 @@ export default defineConfig({
     postcss: './postcss.config.js',
   },
   plugins: [handlebars()],
+  assetsInclude: ['**/*.hbs']
 })
